@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85A291651CC2194500536DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291641CC2194500536DFA /* AppDelegate.swift */; };
+		85A2916A1CC2194600536DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A291681CC2194600536DFA /* Main.storyboard */; };
+		85A2916C1CC2194600536DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A2916B1CC2194600536DFA /* Assets.xcassets */; };
+		85A2916F1CC2194600536DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A2916D1CC2194600536DFA /* LaunchScreen.storyboard */; };
+		85A2917D1CC2A8D800536DFA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291791CC2A8D800536DFA /* ResultsViewController.swift */; };
+		85A2917E1CC2A8D800536DFA /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2917A1CC2A8D800536DFA /* Choice.swift */; };
+		85A2917F1CC2A8D800536DFA /* VoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2917B1CC2A8D800536DFA /* VoteData.swift */; };
+		85A291801CC2A8D800536DFA /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2917C1CC2A8D800536DFA /* VoteViewController.swift */; };
+		85A291821CC2C13800536DFA /* VoteTabBarController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291811CC2C13800536DFA /* VoteTabBarController .swift */; };
+		85A291841CC366E800536DFA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291831CC366E800536DFA /* SettingsViewController.swift */; };
+		85A291861CC399EE00536DFA /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291851CC399EE00536DFA /* CreateViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85A291611CC2194500536DFA /* VotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A291641CC2194500536DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85A291691CC2194600536DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85A2916B1CC2194600536DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85A2916E1CC2194600536DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85A291701CC2194600536DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A291791CC2A8D800536DFA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		85A2917A1CC2A8D800536DFA /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		85A2917B1CC2A8D800536DFA /* VoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteData.swift; sourceTree = "<group>"; };
+		85A2917C1CC2A8D800536DFA /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		85A291811CC2C13800536DFA /* VoteTabBarController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VoteTabBarController .swift"; sourceTree = "<group>"; };
+		85A291831CC366E800536DFA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		85A291851CC399EE00536DFA /* CreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85A2915E1CC2194500536DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A291581CC2194500536DFA = {
+			isa = PBXGroup;
+			children = (
+				85A291631CC2194500536DFA /* VotePro */,
+				85A291621CC2194500536DFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85A291621CC2194500536DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85A291611CC2194500536DFA /* VotePro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85A291631CC2194500536DFA /* VotePro */ = {
+			isa = PBXGroup;
+			children = (
+				85A291781CC2A88900536DFA /* Data model */,
+				85A291761CC2A87600536DFA /* View controllers */,
+				85A291641CC2194500536DFA /* AppDelegate.swift */,
+				85A291681CC2194600536DFA /* Main.storyboard */,
+				85A2916B1CC2194600536DFA /* Assets.xcassets */,
+				85A2916D1CC2194600536DFA /* LaunchScreen.storyboard */,
+				85A291701CC2194600536DFA /* Info.plist */,
+			);
+			path = VotePro;
+			sourceTree = "<group>";
+		};
+		85A291761CC2A87600536DFA /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85A291771CC2A88000536DFA /* Containers */,
+				85A291791CC2A8D800536DFA /* ResultsViewController.swift */,
+				85A2917C1CC2A8D800536DFA /* VoteViewController.swift */,
+				85A291831CC366E800536DFA /* SettingsViewController.swift */,
+				85A291851CC399EE00536DFA /* CreateViewController.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		85A291771CC2A88000536DFA /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				85A291811CC2C13800536DFA /* VoteTabBarController .swift */,
+			);
+			name = Containers;
+			sourceTree = "<group>";
+		};
+		85A291781CC2A88900536DFA /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				85A2917A1CC2A8D800536DFA /* Choice.swift */,
+				85A2917B1CC2A8D800536DFA /* VoteData.swift */,
+			);
+			name = "Data model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85A291601CC2194500536DFA /* VotePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A291731CC2194600536DFA /* Build configuration list for PBXNativeTarget "VotePro" */;
+			buildPhases = (
+				85A2915D1CC2194500536DFA /* Sources */,
+				85A2915E1CC2194500536DFA /* Frameworks */,
+				85A2915F1CC2194500536DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VotePro;
+			productName = VotePro;
+			productReference = 85A291611CC2194500536DFA /* VotePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85A291591CC2194500536DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = diadraw;
+				TargetAttributes = {
+					85A291601CC2194500536DFA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 85A2915C1CC2194500536DFA /* Build configuration list for PBXProject "VotePro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85A291581CC2194500536DFA;
+			productRefGroup = 85A291621CC2194500536DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A291601CC2194500536DFA /* VotePro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A2915F1CC2194500536DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A2916F1CC2194600536DFA /* LaunchScreen.storyboard in Resources */,
+				85A2916C1CC2194600536DFA /* Assets.xcassets in Resources */,
+				85A2916A1CC2194600536DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85A2915D1CC2194500536DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A291861CC399EE00536DFA /* CreateViewController.swift in Sources */,
+				85A2917E1CC2A8D800536DFA /* Choice.swift in Sources */,
+				85A2917F1CC2A8D800536DFA /* VoteData.swift in Sources */,
+				85A291841CC366E800536DFA /* SettingsViewController.swift in Sources */,
+				85A291821CC2C13800536DFA /* VoteTabBarController .swift in Sources */,
+				85A291801CC2A8D800536DFA /* VoteViewController.swift in Sources */,
+				85A291651CC2194500536DFA /* AppDelegate.swift in Sources */,
+				85A2917D1CC2A8D800536DFA /* ResultsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85A291681CC2194600536DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A291691CC2194600536DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85A2916D1CC2194600536DFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A2916E1CC2194600536DFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85A291711CC2194600536DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85A291721CC2194600536DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85A291741CC2194600536DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VotePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.VotePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85A291751CC2194600536DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VotePro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.VotePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85A2915C1CC2194500536DFA /* Build configuration list for PBXProject "VotePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A291711CC2194600536DFA /* Debug */,
+				85A291721CC2194600536DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A291731CC2194600536DFA /* Build configuration list for PBXNativeTarget "VotePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A291741CC2194600536DFA /* Debug */,
+				85A291751CC2194600536DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85A291591CC2194500536DFA /* Project object */;
+}

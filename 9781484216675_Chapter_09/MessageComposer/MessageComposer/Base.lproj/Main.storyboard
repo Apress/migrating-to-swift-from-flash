@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MessageComposer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hristo.lesev@diadraw.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-F7-tQL">
+                                <rect key="frame" x="20" y="49" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaL-LA-LnD">
+                                <rect key="frame" x="20" y="116" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-hn-Jm2">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1lc-H9-Cex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMG-X4-WgH">
+                                <rect key="frame" x="20" y="87" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Etf-f2-1Ii"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message subject:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-ag-WV4">
+                                <rect key="frame" x="20" y="202" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XcO-tX-yvv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Message body:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97x-XL-GmC">
+                                <rect key="frame" x="20" y="282" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7op-RL-bES"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zln-QP-SXs">
+                                <rect key="frame" x="20" y="159" width="280" height="30"/>
+                                <state key="normal" title="Pick a contact from the address book"/>
+                                <connections>
+                                    <action selector="selectContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20A-87-l0j"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello from Swift" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMV-WW-Sfr">
+                                <rect key="frame" x="20" y="231" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Hello from my Swift message composing app. It is cool, isn't it." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OKI-ya-57E">
+                                <rect key="frame" x="20" y="316" width="280" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-st-WI6">
+                                <rect key="frame" x="20" y="469" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="mqo-QN-69j"/>
+                                </constraints>
+                                <state key="normal" title="E-mail"/>
+                                <connections>
+                                    <action selector="sendEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gah-rc-kOH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiB-7w-xMS">
+                                <rect key="frame" x="137" y="469" width="46" height="30"/>
+                                <state key="normal" title="SMS"/>
+                                <connections>
+                                    <action selector="sendSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VRQ-Ia-YUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBx-kG-ana">
+                                <rect key="frame" x="254" y="469" width="46" height="30"/>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="makeCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Neb-K2-klI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r0r-F7-tQL" firstAttribute="top" secondItem="ApK-hn-Jm2" secondAttribute="bottom" constant="8" symbolic="YES" id="0FT-jG-xny"/>
+                            <constraint firstItem="AaL-LA-LnD" firstAttribute="top" secondItem="OMG-X4-WgH" secondAttribute="bottom" constant="8" symbolic="YES" id="198-ox-6Bn"/>
+                            <constraint firstItem="3bU-st-WI6" firstAttribute="leading" secondItem="OKI-ya-57E" secondAttribute="leading" id="1SY-nV-BjN"/>
+                            <constraint firstItem="EBx-kG-ana" firstAttribute="baseline" secondItem="eiB-7w-xMS" secondAttribute="baseline" id="2Gd-Wv-DZb"/>
+                            <constraint firstItem="EBx-kG-ana" firstAttribute="leading" secondItem="eiB-7w-xMS" secondAttribute="trailing" constant="71" id="2Nk-VV-Afj"/>
+                            <constraint firstItem="OKI-ya-57E" firstAttribute="trailing" secondItem="EBx-kG-ana" secondAttribute="trailing" id="3bL-Vj-6NZ"/>
+                            <constraint firstItem="ApK-hn-Jm2" firstAttribute="leading" secondItem="r0r-F7-tQL" secondAttribute="leading" id="4Km-QF-iWb"/>
+                            <constraint firstItem="sxH-ag-WV4" firstAttribute="trailing" secondItem="rMV-WW-Sfr" secondAttribute="trailing" id="4bT-eO-KrS"/>
+                            <constraint firstItem="ApK-hn-Jm2" firstAttribute="trailing" secondItem="r0r-F7-tQL" secondAttribute="trailing" id="8u5-sB-tWX"/>
+                            <constraint firstItem="Zln-QP-SXs" firstAttribute="top" secondItem="AaL-LA-LnD" secondAttribute="bottom" constant="13" id="9Qr-l7-kEF"/>
+                            <constraint firstItem="OMG-X4-WgH" firstAttribute="top" secondItem="r0r-F7-tQL" secondAttribute="bottom" constant="8" symbolic="YES" id="Bzt-ok-nRP"/>
+                            <constraint firstItem="sxH-ag-WV4" firstAttribute="top" secondItem="Zln-QP-SXs" secondAttribute="bottom" constant="13" id="Df9-aR-CZb"/>
+                            <constraint firstItem="eiB-7w-xMS" firstAttribute="centerX" secondItem="OKI-ya-57E" secondAttribute="centerX" id="ESe-ul-C3W"/>
+                            <constraint firstItem="rMV-WW-Sfr" firstAttribute="leading" secondItem="sxH-ag-WV4" secondAttribute="leading" id="G5m-TL-2Ak"/>
+                            <constraint firstItem="Zln-QP-SXs" firstAttribute="trailing" secondItem="AaL-LA-LnD" secondAttribute="trailing" id="Leq-xt-Iwo"/>
+                            <constraint firstItem="97x-XL-GmC" firstAttribute="trailing" secondItem="OKI-ya-57E" secondAttribute="trailing" id="NEZ-7G-1Gp"/>
+                            <constraint firstItem="3bU-st-WI6" firstAttribute="baseline" secondItem="eiB-7w-xMS" secondAttribute="baseline" id="NG0-G8-vBA"/>
+                            <constraint firstItem="OMG-X4-WgH" firstAttribute="leading" secondItem="AaL-LA-LnD" secondAttribute="leading" id="ORB-p8-kyT"/>
+                            <constraint firstItem="sxH-ag-WV4" firstAttribute="trailing" secondItem="Zln-QP-SXs" secondAttribute="trailing" id="TcH-4F-ItU"/>
+                            <constraint firstItem="eiB-7w-xMS" firstAttribute="leading" secondItem="3bU-st-WI6" secondAttribute="trailing" constant="71" id="TgO-96-LjI"/>
+                            <constraint firstItem="rMV-WW-Sfr" firstAttribute="top" secondItem="sxH-ag-WV4" secondAttribute="bottom" constant="8" symbolic="YES" id="X8X-Et-Ago"/>
+                            <constraint firstItem="ApK-hn-Jm2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yoa-RK-3eh"/>
+                            <constraint firstItem="OMG-X4-WgH" firstAttribute="trailing" secondItem="r0r-F7-tQL" secondAttribute="trailing" id="bog-Au-H08"/>
+                            <constraint firstItem="rMV-WW-Sfr" firstAttribute="trailing" secondItem="97x-XL-GmC" secondAttribute="trailing" id="bum-0O-APA"/>
+                            <constraint firstItem="Zln-QP-SXs" firstAttribute="leading" secondItem="AaL-LA-LnD" secondAttribute="leading" id="cob-2E-QNh"/>
+                            <constraint firstItem="3bU-st-WI6" firstAttribute="top" secondItem="OKI-ya-57E" secondAttribute="bottom" constant="25" id="fLN-7p-x9A"/>
+                            <constraint firstItem="OKI-ya-57E" firstAttribute="top" secondItem="97x-XL-GmC" secondAttribute="bottom" constant="13" id="h0A-8C-c1y"/>
+                            <constraint firstItem="OKI-ya-57E" firstAttribute="leading" secondItem="97x-XL-GmC" secondAttribute="leading" id="hdI-jh-ZZV"/>
+                            <constraint firstItem="Zln-QP-SXs" firstAttribute="leading" secondItem="sxH-ag-WV4" secondAttribute="leading" id="jd3-Ke-wBD"/>
+                            <constraint firstItem="OMG-X4-WgH" firstAttribute="leading" secondItem="r0r-F7-tQL" secondAttribute="leading" id="k4P-SO-ShH"/>
+                            <constraint firstItem="ApK-hn-Jm2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="k8f-V0-WSQ"/>
+                            <constraint firstItem="r0r-F7-tQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qV8-ph-fRu"/>
+                            <constraint firstItem="AaL-LA-LnD" firstAttribute="trailing" secondItem="OMG-X4-WgH" secondAttribute="trailing" id="sZY-lf-ue6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3bU-st-WI6" secondAttribute="bottom" constant="82" id="tJ1-zi-lCN"/>
+                            <constraint firstItem="rMV-WW-Sfr" firstAttribute="leading" secondItem="97x-XL-GmC" secondAttribute="leading" id="uV9-Hs-YMR"/>
+                            <constraint firstItem="97x-XL-GmC" firstAttribute="top" secondItem="rMV-WW-Sfr" secondAttribute="bottom" constant="8" symbolic="YES" id="uvz-8H-Z5S"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="messageBody" destination="OKI-ya-57E" id="9yy-fo-Vo2"/>
+                        <outlet property="messageSubject" destination="rMV-WW-Sfr" id="9tb-Y8-Rm9"/>
+                        <outlet property="phoneNumber" destination="AaL-LA-LnD" id="opa-kh-Inn"/>
+                        <outlet property="recipientEmail" destination="r0r-F7-tQL" id="QF1-Zc-8uM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="382"/>
+        </scene>
+    </scenes>
+</document>

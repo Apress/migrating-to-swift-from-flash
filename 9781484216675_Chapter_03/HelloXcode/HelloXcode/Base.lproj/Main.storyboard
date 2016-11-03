@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloXcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ELH-bU-2gD">
+                                <rect key="frame" x="30" y="61" width="540" height="529"/>
+                                <date key="date" timeIntervalSinceReferenceDate="476347228.38358599">
+                                    <!--2016-02-05 06:40:28 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qVG-EL-y7a"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of the week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9c-C5-BzA">
+                                <rect key="frame" x="30" y="30" width="540" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ELH-bU-2gD" secondAttribute="trailing" constant="10" id="2Uv-iO-wzO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i9c-C5-BzA" secondAttribute="trailing" constant="10" id="8ZK-i9-6U8"/>
+                            <constraint firstItem="ELH-bU-2gD" firstAttribute="top" secondItem="i9c-C5-BzA" secondAttribute="bottom" constant="10" id="FRa-Vs-qhZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ELH-bU-2gD" secondAttribute="bottom" constant="10" id="KN2-dF-tCT"/>
+                            <constraint firstItem="i9c-C5-BzA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="RUB-2A-JXR"/>
+                            <constraint firstItem="ELH-bU-2gD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="YQO-we-CZu"/>
+                            <constraint firstItem="i9c-C5-BzA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="nYM-xI-1kY"/>
+                            <constraint firstItem="ELH-bU-2gD" firstAttribute="top" secondItem="i9c-C5-BzA" secondAttribute="bottom" constant="10" id="pPr-0O-2Bo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="ELH-bU-2gD" id="78f-63-XOi"/>
+                        <outlet property="dayOfTheWeek" destination="i9c-C5-BzA" id="RNA-R1-rQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

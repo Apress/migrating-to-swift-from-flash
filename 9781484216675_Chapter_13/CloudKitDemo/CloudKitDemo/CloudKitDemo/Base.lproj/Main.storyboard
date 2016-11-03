@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CloudKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVP-CV-6NB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Shopping list" id="swJ-5l-0tN">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="fpg-ed-A00">
+                                            <connections>
+                                                <action selector="didTapEdit:" destination="BYZ-38-t0r" id="YnU-PC-GgW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5bQ-TC-tgh">
+                                            <connections>
+                                                <action selector="didTapAdd:" destination="BYZ-38-t0r" id="TVs-nM-4Cy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IlM-pW-EGN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ShoppingItemCell" id="zyf-d4-sT7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zyf-d4-sT7" id="NVZ-Xm-1ya">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="IlM-pW-EGN" secondAttribute="trailing" constant="-20" id="D2N-TQ-KU8"/>
+                            <constraint firstItem="IVP-CV-6NB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="G1P-gx-YZ9"/>
+                            <constraint firstItem="IVP-CV-6NB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Hi6-1j-J3V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IVP-CV-6NB" secondAttribute="trailing" constant="-20" id="XWr-qg-OKA"/>
+                            <constraint firstItem="IlM-pW-EGN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XeM-qp-X8q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IlM-pW-EGN" secondAttribute="bottom" id="je5-ke-iux"/>
+                            <constraint firstItem="IlM-pW-EGN" firstAttribute="top" secondItem="IVP-CV-6NB" secondAttribute="bottom" id="osa-5w-Aj1">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IVP-CV-6NB"/>
+                                <exclude reference="IlM-pW-EGN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="je5-ke-iux"/>
+                                <exclude reference="G1P-gx-YZ9"/>
+                                <exclude reference="Hi6-1j-J3V"/>
+                                <exclude reference="XWr-qg-OKA"/>
+                                <exclude reference="D2N-TQ-KU8"/>
+                                <exclude reference="XeM-qp-X8q"/>
+                                <exclude reference="osa-5w-Aj1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IVP-CV-6NB"/>
+                                <include reference="IlM-pW-EGN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="je5-ke-iux"/>
+                                <include reference="G1P-gx-YZ9"/>
+                                <include reference="Hi6-1j-J3V"/>
+                                <include reference="XWr-qg-OKA"/>
+                                <include reference="D2N-TQ-KU8"/>
+                                <include reference="XeM-qp-X8q"/>
+                                <include reference="osa-5w-Aj1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="IlM-pW-EGN" id="bpF-x7-6md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307.5" y="923"/>
+        </scene>
+    </scenes>
+</document>

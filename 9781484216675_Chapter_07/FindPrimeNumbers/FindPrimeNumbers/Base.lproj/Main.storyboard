@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindPrimeNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="200" minValue="2" maxValue="100000" translatesAutoresizingMaskIntoConstraints="NO" id="OTT-mj-LKY">
+                                <rect key="frame" x="18" y="71" width="564" height="31"/>
+                                <connections>
+                                    <action selector="searchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HgD-pw-N5N"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSU-eA-Cuv">
+                                <rect key="frame" x="20" y="550" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCj-1H-W51"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77h-HX-S1m">
+                                <rect key="frame" x="74" y="550" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydy-6L-75b"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-MF-csU">
+                                <rect key="frame" x="20" y="188" width="560" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hkw-de-moy">
+                                <rect key="frame" x="20" y="528" width="560" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DT-Xk-amR">
+                                <rect key="frame" x="20" y="157" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find prime numbers less than X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taI-D3-gUK">
+                                <rect key="frame" x="20" y="40" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLp-lF-eRG">
+                                <rect key="frame" x="531" y="106" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use concurrency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsN-rn-Bgn">
+                                <rect key="frame" x="20" y="111" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="8DT-Xk-amR" secondAttribute="trailing" id="1fe-l7-Y6J"/>
+                            <constraint firstItem="taI-D3-gUK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="1oE-yq-1Fd"/>
+                            <constraint firstItem="8DT-Xk-amR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3mV-GA-S83"/>
+                            <constraint firstItem="77h-HX-S1m" firstAttribute="centerY" secondItem="KSU-eA-Cuv" secondAttribute="centerY" id="45P-81-lTF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KSU-eA-Cuv" secondAttribute="bottom" constant="20" id="89k-3f-bwL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hkw-de-moy" secondAttribute="trailing" id="Ab1-Sr-j9O"/>
+                            <constraint firstItem="OTT-mj-LKY" firstAttribute="top" secondItem="taI-D3-gUK" secondAttribute="bottom" constant="10" id="BBl-IR-Hif"/>
+                            <constraint firstItem="8DT-Xk-amR" firstAttribute="top" secondItem="KLp-lF-eRG" secondAttribute="bottom" constant="20" id="KvC-3I-TJa"/>
+                            <constraint firstItem="OTT-mj-LKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nto-fu-T4p"/>
+                            <constraint firstItem="taI-D3-gUK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SXp-kA-jrm"/>
+                            <constraint firstItem="4rz-MF-csU" firstAttribute="top" secondItem="8DT-Xk-amR" secondAttribute="bottom" constant="10" id="aRv-RW-rtD"/>
+                            <constraint firstItem="KSU-eA-Cuv" firstAttribute="top" secondItem="Hkw-de-moy" secondAttribute="bottom" constant="20" id="bc7-RP-bjG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OTT-mj-LKY" secondAttribute="trailing" id="bqE-9R-zTf"/>
+                            <constraint firstItem="77h-HX-S1m" firstAttribute="leading" secondItem="KSU-eA-Cuv" secondAttribute="trailing" constant="20" id="bxr-D2-XRb"/>
+                            <constraint firstItem="zsN-rn-Bgn" firstAttribute="top" secondItem="OTT-mj-LKY" secondAttribute="bottom" constant="10" id="cs2-3j-b7Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="taI-D3-gUK" secondAttribute="trailing" id="dD7-Ix-D4S"/>
+                            <constraint firstItem="zsN-rn-Bgn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eSf-BV-3Um"/>
+                            <constraint firstItem="Hkw-de-moy" firstAttribute="top" secondItem="4rz-MF-csU" secondAttribute="bottom" constant="10" id="g8m-rz-MWe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4rz-MF-csU" secondAttribute="trailing" id="h84-go-l8t"/>
+                            <constraint firstItem="KSU-eA-Cuv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="i4h-sR-9cQ"/>
+                            <constraint firstItem="4rz-MF-csU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="j2W-aa-2Vm"/>
+                            <constraint firstItem="KLp-lF-eRG" firstAttribute="centerY" secondItem="zsN-rn-Bgn" secondAttribute="centerY" id="nFN-Wo-xH6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KLp-lF-eRG" secondAttribute="trailing" id="p96-kI-KkC"/>
+                            <constraint firstItem="Hkw-de-moy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rza-GP-qBj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="77h-HX-S1m" id="Mnw-bs-wI4"/>
+                        <outlet property="concurrencySwitch" destination="KLp-lF-eRG" id="OS6-MC-XtP"/>
+                        <outlet property="resultsTextView" destination="4rz-MF-csU" id="ypW-kQ-fsU"/>
+                        <outlet property="searchLabel" destination="taI-D3-gUK" id="8f7-9g-8Tg"/>
+                        <outlet property="searchProgress" destination="Hkw-de-moy" id="Los-Hd-X8E"/>
+                        <outlet property="searchSlider" destination="OTT-mj-LKY" id="MIq-32-DML"/>
+                        <outlet property="startButton" destination="KSU-eA-Cuv" id="O9A-Wa-QzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="479"/>
+        </scene>
+    </scenes>
+</document>

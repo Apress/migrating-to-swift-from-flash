@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tLP-Ru-yhm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vote-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoteViewController" customModule="VotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mxb-sT-v4D">
+                                <rect key="frame" x="20" y="40" width="560" height="491"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-ID-TUV">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Lmh-Mn-lP9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9VP-lT-SyI">
+                                        <rect key="frame" x="0.0" y="40" width="560" height="411"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChoiceCell" textLabel="ra2-W7-Zlq" style="IBUITableViewCellStyleDefault" id="Fpg-Jn-MVC">
+                                                <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fpg-Jn-MVC" id="FHc-d9-jdx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ra2-W7-Zlq">
+                                                            <rect key="frame" x="15" y="0.0" width="530" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-MH-v2J">
+                                        <rect key="frame" x="0.0" y="461" width="560" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXm-Oy-uCw">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="30"/>
+                                                <state key="normal" title="Abstain"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="abstain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jIa-xY-x6m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edC-ID-Huj">
+                                                <rect key="frame" x="285" y="0.0" width="275" height="30"/>
+                                                <state key="normal" title="Vote"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="vote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PrU-Hh-q0a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="X9K-bH-gHn"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mxb-sT-v4D" secondAttribute="bottom" constant="20" id="4Bx-q7-5mi"/>
+                            <constraint firstItem="Mxb-sT-v4D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="I6j-D1-qYg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mxb-sT-v4D" secondAttribute="trailing" id="Kdr-nX-oWg"/>
+                            <constraint firstItem="Mxb-sT-v4D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uOI-V9-yDE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vote" id="j5p-NW-twK"/>
+                    <connections>
+                        <outlet property="choicesTable" destination="9VP-lT-SyI" id="1fH-tX-5Jl"/>
+                        <outlet property="topicLabel" destination="Ael-ID-TUV" id="Q62-DU-jC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="75"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="wlW-Z9-REf">
+            <objects>
+                <viewController id="Ztu-Za-nba" customClass="SettingsViewController" customModule="VotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ne-MF-Os0"/>
+                        <viewControllerLayoutGuide type="bottom" id="uFY-f9-fHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zkx-zH-lOF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report results as percentages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56K-Rz-ft3">
+                                <rect key="frame" x="20" y="40" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limit choices to: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCr-Dx-yKa">
+                                <rect key="frame" x="20" y="81" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-YJ-8jd">
+                                <rect key="frame" x="531" y="35" width="51" height="31"/>
+                                <connections>
+                                    <action selector="resultsAsPercentToggled:" destination="Ztu-Za-nba" eventType="valueChanged" id="kjU-yv-1O7"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minimumValue="2" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-ic-40I">
+                                <rect key="frame" x="486" y="77" width="94" height="29"/>
+                                <connections>
+                                    <action selector="maxChoicesChanged:" destination="Ztu-Za-nba" eventType="valueChanged" id="vHC-Nw-LAT"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pbM-ic-40I" secondAttribute="trailing" id="3w0-qg-Eme"/>
+                            <constraint firstItem="i8g-YJ-8jd" firstAttribute="centerY" secondItem="56K-Rz-ft3" secondAttribute="centerY" id="933-qT-VEU"/>
+                            <constraint firstItem="mCr-Dx-yKa" firstAttribute="top" secondItem="56K-Rz-ft3" secondAttribute="bottom" constant="20" id="D6C-xF-GIY"/>
+                            <constraint firstItem="mCr-Dx-yKa" firstAttribute="leading" secondItem="zkx-zH-lOF" secondAttribute="leadingMargin" id="Mej-fz-NTI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i8g-YJ-8jd" secondAttribute="trailing" id="bA0-SP-xTW"/>
+                            <constraint firstItem="56K-Rz-ft3" firstAttribute="leading" secondItem="zkx-zH-lOF" secondAttribute="leadingMargin" id="kSt-ad-v0l"/>
+                            <constraint firstItem="pbM-ic-40I" firstAttribute="centerY" secondItem="mCr-Dx-yKa" secondAttribute="centerY" id="sSc-p2-vXi"/>
+                            <constraint firstItem="56K-Rz-ft3" firstAttribute="top" secondItem="6Ne-MF-Os0" secondAttribute="bottom" constant="20" id="yk5-dF-WfB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="rby-0N-CDy"/>
+                    <connections>
+                        <outlet property="maxChoicesLabel" destination="mCr-Dx-yKa" id="Sf4-K0-XZW"/>
+                        <outlet property="maxChoicesStepper" destination="pbM-ic-40I" id="ktV-RT-9hi"/>
+                        <outlet property="resultsAsPercentSwitch" destination="i8g-YJ-8jd" id="ulg-cT-gNu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdd-Wc-v11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="782"/>
+        </scene>
+        <!--Create-->
+        <scene sceneID="K3m-0B-1YY">
+            <objects>
+                <viewController id="UIV-VE-kOQ" customClass="CreateViewController" customModule="VotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="udz-36-hH9"/>
+                        <viewControllerLayoutGuide type="bottom" id="0G6-JD-Sfb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J4o-2S-8bs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-KY-8gX">
+                                <rect key="frame" x="20" y="40" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aez-eP-JJA">
+                                <rect key="frame" x="77" y="36" width="503" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-lA-vfu">
+                                <rect key="frame" x="20" y="81" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="UIV-VE-kOQ" eventType="touchUpInside" id="xAl-Pf-Z8C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-JQ-Pok">
+                                <rect key="frame" x="60" y="81" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="removeButtonTapped:" destination="UIV-VE-kOQ" eventType="touchUpInside" id="9ZV-CJ-HFt"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTt-Uh-cJs">
+                                <rect key="frame" x="20" y="131" width="560" height="400"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-3f-cvU">
+                                        <rect key="frame" x="8" y="8" width="0.0" height="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fQe-3f-cvU" firstAttribute="bottom" secondItem="yTt-Uh-cJs" secondAttribute="bottomMargin" id="PIa-TF-GMc"/>
+                                    <constraint firstItem="fQe-3f-cvU" firstAttribute="top" secondItem="yTt-Uh-cJs" secondAttribute="topMargin" id="Xgb-ZI-Rdj"/>
+                                    <constraint firstItem="fQe-3f-cvU" firstAttribute="trailing" secondItem="yTt-Uh-cJs" secondAttribute="trailingMargin" id="mNB-he-uc5"/>
+                                    <constraint firstItem="fQe-3f-cvU" firstAttribute="leading" secondItem="yTt-Uh-cJs" secondAttribute="leadingMargin" id="pAc-Se-mpb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ne-JQ-Pok" firstAttribute="leading" secondItem="1fQ-lA-vfu" secondAttribute="trailing" constant="10" id="0La-1O-8le"/>
+                            <constraint firstItem="yTt-Uh-cJs" firstAttribute="top" secondItem="1fQ-lA-vfu" secondAttribute="bottom" constant="20" id="4Rx-0Q-0HP"/>
+                            <constraint firstItem="EOY-KY-8gX" firstAttribute="leading" secondItem="J4o-2S-8bs" secondAttribute="leadingMargin" id="DbS-iP-Rsc"/>
+                            <constraint firstItem="yTt-Uh-cJs" firstAttribute="trailing" secondItem="J4o-2S-8bs" secondAttribute="trailingMargin" id="GDC-0w-1yn"/>
+                            <constraint firstItem="1fQ-lA-vfu" firstAttribute="leading" secondItem="J4o-2S-8bs" secondAttribute="leadingMargin" id="IbV-zQ-asx"/>
+                            <constraint firstItem="aez-eP-JJA" firstAttribute="leading" secondItem="EOY-KY-8gX" secondAttribute="trailing" constant="10" id="Jxw-ae-o93"/>
+                            <constraint firstItem="yTt-Uh-cJs" firstAttribute="bottom" secondItem="0G6-JD-Sfb" secondAttribute="top" constant="-20" id="PxS-jB-X5q"/>
+                            <constraint firstItem="1fQ-lA-vfu" firstAttribute="top" secondItem="EOY-KY-8gX" secondAttribute="bottom" constant="20" id="QoF-5Y-FJV"/>
+                            <constraint firstItem="6ne-JQ-Pok" firstAttribute="centerY" secondItem="1fQ-lA-vfu" secondAttribute="centerY" id="Rar-S5-YiW"/>
+                            <constraint firstItem="aez-eP-JJA" firstAttribute="centerY" secondItem="EOY-KY-8gX" secondAttribute="centerY" id="Wpu-td-bFF"/>
+                            <constraint firstItem="EOY-KY-8gX" firstAttribute="top" secondItem="udz-36-hH9" secondAttribute="bottom" constant="20" id="YBW-6H-ehq"/>
+                            <constraint firstItem="aez-eP-JJA" firstAttribute="trailing" secondItem="J4o-2S-8bs" secondAttribute="trailingMargin" id="lZA-oF-odj"/>
+                            <constraint firstItem="yTt-Uh-cJs" firstAttribute="leading" secondItem="J4o-2S-8bs" secondAttribute="leadingMargin" id="wl4-bt-FHx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Create" id="faG-oZ-BSs"/>
+                    <connections>
+                        <outlet property="addButton" destination="1fQ-lA-vfu" id="kpb-dl-h8t"/>
+                        <outlet property="choicesView" destination="fQe-3f-cvU" id="Auk-h9-p8W"/>
+                        <outlet property="removeButton" destination="6ne-JQ-Pok" id="cYb-jU-dwK"/>
+                        <outlet property="voteTopic" destination="aez-eP-JJA" id="ZQW-0p-ZSb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xl-OY-Faz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="813"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="4JL-eF-dX9">
+            <objects>
+                <viewController id="fcO-Pe-v1q" customClass="ResultsViewController" customModule="VotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ajq-bY-4xO"/>
+                        <viewControllerLayoutGuide type="bottom" id="9bO-zB-8YR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lc2-cK-9Yv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hKK-hO-5RP">
+                                <rect key="frame" x="20" y="40" width="560" height="491"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-83-ga1">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="491"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hKK-hO-5RP" secondAttribute="trailing" id="0vz-hp-jBk"/>
+                            <constraint firstItem="hKK-hO-5RP" firstAttribute="top" secondItem="Ajq-bY-4xO" secondAttribute="bottom" constant="20" id="4U8-m7-HiX"/>
+                            <constraint firstItem="9bO-zB-8YR" firstAttribute="top" secondItem="hKK-hO-5RP" secondAttribute="bottom" constant="20" id="Ond-wa-j0F"/>
+                            <constraint firstItem="hKK-hO-5RP" firstAttribute="leading" secondItem="lc2-cK-9Yv" secondAttribute="leadingMargin" id="xBf-Qd-HRY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Results" id="xCj-vq-h17"/>
+                    <connections>
+                        <outlet property="resultsTextView" destination="ZTR-83-ga1" id="ua8-BR-QwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zs8-6k-ii9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="75"/>
+        </scene>
+        <!--Vote Tab Bar Controller-->
+        <scene sceneID="kk1-4x-Lg3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tLP-Ru-yhm" customClass="VoteTabBarController" customModule="VotePro" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="yBf-HP-0S4">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qef-CF-gnx"/>
+                        <segue destination="fcO-Pe-v1q" kind="relationship" relationship="viewControllers" id="lBz-Q2-nHf"/>
+                        <segue destination="UIV-VE-kOQ" kind="relationship" relationship="viewControllers" id="57m-OD-gvH"/>
+                        <segue destination="Ztu-Za-nba" kind="relationship" relationship="viewControllers" id="eE9-me-nlN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sj-m8-Wzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="75"/>
+        </scene>
+    </scenes>
+</document>

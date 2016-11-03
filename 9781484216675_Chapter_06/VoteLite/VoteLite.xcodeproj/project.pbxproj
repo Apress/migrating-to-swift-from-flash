@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85A2913D1CC0B91000536DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2913C1CC0B91000536DFA /* AppDelegate.swift */; };
+		85A291421CC0B91000536DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A291401CC0B91000536DFA /* Main.storyboard */; };
+		85A291441CC0B91000536DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A291431CC0B91000536DFA /* Assets.xcassets */; };
+		85A291471CC0B91000536DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A291451CC0B91000536DFA /* LaunchScreen.storyboard */; };
+		85A291521CC0C00F00536DFA /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291501CC0C00F00536DFA /* Choice.swift */; };
+		85A291531CC0C00F00536DFA /* VoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291511CC0C00F00536DFA /* VoteData.swift */; };
+		85A291561CC0C01E00536DFA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291541CC0C01E00536DFA /* ResultsViewController.swift */; };
+		85A291571CC0C01E00536DFA /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A291551CC0C01E00536DFA /* VoteViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85A291391CC0B90F00536DFA /* VoteLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoteLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A2913C1CC0B91000536DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85A291411CC0B91000536DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85A291431CC0B91000536DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85A291461CC0B91000536DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85A291481CC0B91000536DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A291501CC0C00F00536DFA /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		85A291511CC0C00F00536DFA /* VoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteData.swift; sourceTree = "<group>"; };
+		85A291541CC0C01E00536DFA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		85A291551CC0C01E00536DFA /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85A291361CC0B90F00536DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85A291301CC0B90F00536DFA = {
+			isa = PBXGroup;
+			children = (
+				85A2913B1CC0B91000536DFA /* VoteLite */,
+				85A2913A1CC0B90F00536DFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85A2913A1CC0B90F00536DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85A291391CC0B90F00536DFA /* VoteLite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85A2913B1CC0B91000536DFA /* VoteLite */ = {
+			isa = PBXGroup;
+			children = (
+				85A2914F1CC0BFF300536DFA /* Data model */,
+				85A2914E1CC0BFE900536DFA /* View controllers */,
+				85A2913C1CC0B91000536DFA /* AppDelegate.swift */,
+				85A291401CC0B91000536DFA /* Main.storyboard */,
+				85A291431CC0B91000536DFA /* Assets.xcassets */,
+				85A291451CC0B91000536DFA /* LaunchScreen.storyboard */,
+				85A291481CC0B91000536DFA /* Info.plist */,
+			);
+			path = VoteLite;
+			sourceTree = "<group>";
+		};
+		85A2914E1CC0BFE900536DFA /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85A291541CC0C01E00536DFA /* ResultsViewController.swift */,
+				85A291551CC0C01E00536DFA /* VoteViewController.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+		85A2914F1CC0BFF300536DFA /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				85A291501CC0C00F00536DFA /* Choice.swift */,
+				85A291511CC0C00F00536DFA /* VoteData.swift */,
+			);
+			name = "Data model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85A291381CC0B90F00536DFA /* VoteLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A2914B1CC0B91000536DFA /* Build configuration list for PBXNativeTarget "VoteLite" */;
+			buildPhases = (
+				85A291351CC0B90F00536DFA /* Sources */,
+				85A291361CC0B90F00536DFA /* Frameworks */,
+				85A291371CC0B90F00536DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoteLite;
+			productName = VoteLite;
+			productReference = 85A291391CC0B90F00536DFA /* VoteLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85A291311CC0B90F00536DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = diadraw;
+				TargetAttributes = {
+					85A291381CC0B90F00536DFA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 85A291341CC0B90F00536DFA /* Build configuration list for PBXProject "VoteLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85A291301CC0B90F00536DFA;
+			productRefGroup = 85A2913A1CC0B90F00536DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A291381CC0B90F00536DFA /* VoteLite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A291371CC0B90F00536DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A291471CC0B91000536DFA /* LaunchScreen.storyboard in Resources */,
+				85A291441CC0B91000536DFA /* Assets.xcassets in Resources */,
+				85A291421CC0B91000536DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85A291351CC0B90F00536DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85A291571CC0C01E00536DFA /* VoteViewController.swift in Sources */,
+				85A291521CC0C00F00536DFA /* Choice.swift in Sources */,
+				85A291531CC0C00F00536DFA /* VoteData.swift in Sources */,
+				85A291561CC0C01E00536DFA /* ResultsViewController.swift in Sources */,
+				85A2913D1CC0B91000536DFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85A291401CC0B91000536DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A291411CC0B91000536DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85A291451CC0B91000536DFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85A291461CC0B91000536DFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85A291491CC0B91000536DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85A2914A1CC0B91000536DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85A2914C1CC0B91000536DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VoteLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.VoteLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85A2914D1CC0B91000536DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VoteLite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.VoteLite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85A291341CC0B90F00536DFA /* Build configuration list for PBXProject "VoteLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A291491CC0B91000536DFA /* Debug */,
+				85A2914A1CC0B91000536DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A2914B1CC0B91000536DFA /* Build configuration list for PBXNativeTarget "VoteLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A2914C1CC0B91000536DFA /* Debug */,
+				85A2914D1CC0B91000536DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85A291311CC0B90F00536DFA /* Project object */;
+}

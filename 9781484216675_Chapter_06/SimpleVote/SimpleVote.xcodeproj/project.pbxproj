@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		854A4CCB1CBA569E009C80D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A4CCA1CBA569E009C80D3 /* AppDelegate.swift */; };
+		854A4CD01CBA569E009C80D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854A4CCE1CBA569E009C80D3 /* Main.storyboard */; };
+		854A4CD21CBA569E009C80D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854A4CD11CBA569E009C80D3 /* Assets.xcassets */; };
+		854A4CD51CBA569E009C80D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854A4CD31CBA569E009C80D3 /* LaunchScreen.storyboard */; };
+		854A4CDE1CBA6802009C80D3 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A4CDD1CBA6802009C80D3 /* Choice.swift */; };
+		854A4CE01CBA6AAE009C80D3 /* VoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A4CDF1CBA6AAE009C80D3 /* VoteData.swift */; };
+		854A4CE31CBA7530009C80D3 /* VoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854A4CE21CBA7530009C80D3 /* VoteViewController.swift */; };
+		85A2912F1CC0574D00536DFA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A2912E1CC0574D00536DFA /* ResultsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		854A4CC71CBA569D009C80D3 /* SimpleVote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleVote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		854A4CCA1CBA569E009C80D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		854A4CCF1CBA569E009C80D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		854A4CD11CBA569E009C80D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		854A4CD41CBA569E009C80D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		854A4CD61CBA569E009C80D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854A4CDD1CBA6802009C80D3 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		854A4CDF1CBA6AAE009C80D3 /* VoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteData.swift; sourceTree = "<group>"; };
+		854A4CE21CBA7530009C80D3 /* VoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteViewController.swift; sourceTree = "<group>"; };
+		85A2912E1CC0574D00536DFA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		854A4CC41CBA569D009C80D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		854A4CBE1CBA569D009C80D3 = {
+			isa = PBXGroup;
+			children = (
+				854A4CC91CBA569E009C80D3 /* SimpleVote */,
+				854A4CC81CBA569D009C80D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		854A4CC81CBA569D009C80D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				854A4CC71CBA569D009C80D3 /* SimpleVote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		854A4CC91CBA569E009C80D3 /* SimpleVote */ = {
+			isa = PBXGroup;
+			children = (
+				854A4CE11CBA73AC009C80D3 /* View controllers */,
+				854A4CDC1CBA67E5009C80D3 /* Data model */,
+				854A4CCA1CBA569E009C80D3 /* AppDelegate.swift */,
+				854A4CCE1CBA569E009C80D3 /* Main.storyboard */,
+				854A4CD11CBA569E009C80D3 /* Assets.xcassets */,
+				854A4CD31CBA569E009C80D3 /* LaunchScreen.storyboard */,
+				854A4CD61CBA569E009C80D3 /* Info.plist */,
+			);
+			path = SimpleVote;
+			sourceTree = "<group>";
+		};
+		854A4CDC1CBA67E5009C80D3 /* Data model */ = {
+			isa = PBXGroup;
+			children = (
+				854A4CDD1CBA6802009C80D3 /* Choice.swift */,
+				854A4CDF1CBA6AAE009C80D3 /* VoteData.swift */,
+			);
+			name = "Data model";
+			sourceTree = "<group>";
+		};
+		854A4CE11CBA73AC009C80D3 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				854A4CE21CBA7530009C80D3 /* VoteViewController.swift */,
+				85A2912E1CC0574D00536DFA /* ResultsViewController.swift */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		854A4CC61CBA569D009C80D3 /* SimpleVote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 854A4CD91CBA569E009C80D3 /* Build configuration list for PBXNativeTarget "SimpleVote" */;
+			buildPhases = (
+				854A4CC31CBA569D009C80D3 /* Sources */,
+				854A4CC41CBA569D009C80D3 /* Frameworks */,
+				854A4CC51CBA569D009C80D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleVote;
+			productName = SimpleVote;
+			productReference = 854A4CC71CBA569D009C80D3 /* SimpleVote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		854A4CBF1CBA569D009C80D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = diadraw;
+				TargetAttributes = {
+					854A4CC61CBA569D009C80D3 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 854A4CC21CBA569D009C80D3 /* Build configuration list for PBXProject "SimpleVote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 854A4CBE1CBA569D009C80D3;
+			productRefGroup = 854A4CC81CBA569D009C80D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				854A4CC61CBA569D009C80D3 /* SimpleVote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		854A4CC51CBA569D009C80D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854A4CD51CBA569E009C80D3 /* LaunchScreen.storyboard in Resources */,
+				854A4CD21CBA569E009C80D3 /* Assets.xcassets in Resources */,
+				854A4CD01CBA569E009C80D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		854A4CC31CBA569D009C80D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				854A4CDE1CBA6802009C80D3 /* Choice.swift in Sources */,
+				854A4CE01CBA6AAE009C80D3 /* VoteData.swift in Sources */,
+				854A4CE31CBA7530009C80D3 /* VoteViewController.swift in Sources */,
+				85A2912F1CC0574D00536DFA /* ResultsViewController.swift in Sources */,
+				854A4CCB1CBA569E009C80D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		854A4CCE1CBA569E009C80D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				854A4CCF1CBA569E009C80D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		854A4CD31CBA569E009C80D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				854A4CD41CBA569E009C80D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		854A4CD71CBA569E009C80D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		854A4CD81CBA569E009C80D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		854A4CDA1CBA569E009C80D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.SimpleVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		854A4CDB1CBA569E009C80D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleVote/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diadraw.SimpleVote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		854A4CC21CBA569D009C80D3 /* Build configuration list for PBXProject "SimpleVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854A4CD71CBA569E009C80D3 /* Debug */,
+				854A4CD81CBA569E009C80D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		854A4CD91CBA569E009C80D3 /* Build configuration list for PBXNativeTarget "SimpleVote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				854A4CDA1CBA569E009C80D3 /* Debug */,
+				854A4CDB1CBA569E009C80D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 854A4CBF1CBA569D009C80D3 /* Project object */;
+}
